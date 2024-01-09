@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEk039Gagii7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/c3b8d3700c.js" crossorigin="anonymous"></script>
+ 
+    <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+     <!-- Nav bar-->
+   <div>S
+    <nav class="navbar navbar-expand-lg bg-dark">
+     <div class="container">
+        <div class="w-100 d-flex justify-content-between">
+            <div>
+                <i class="fa-solid fa-envelope text-light contact-info"></i>
+                <a href="" class="navbar-sm-brand text-light text-decoration-none contact-info ">info@comp.com</a>
+                <i class="fa-solid fa-phone contact-info text-light"></i>
+                <a href="" class="navbar-sm-brand text-white text-decoration-none contact-info">0427-978-612-855</a>
+            </div>
+        </div>
+        <a href="" class="text-white"><i class="fa-brands fa-facebook me-2"></i></a>
+        <a href="" class="text-white"><i class="fa-brands fa-instagram me-2"></i></a>
+        <a href="" class="text-white"><i class="fa-brands fa-linkedin me-2"></i></a>
+        <a href="" class="text-white"><i class="fa-brands fa-twitter me-2"></i></a>
+      </nav>
+   </div>
+    
+   <!--Nav bar end-->
+
+<!---main-nav start-->
+
+<nav class="navbar navbar-expand-lg bg-light s-shadow">
+    <div class="container d-flex justify-content-between">
+        <div>
+            <h1 class="text-success">RIYART</h1>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item nav-items">
+                    <a class="nav-link nav-links" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item nav-items">
+                    <a class="nav-link nav-links" href="./about.html">About</a>
+                  </li>
+                  <li class="nav-item nav-items">
+                    <a class="nav-link nav-links" href="#">Shop</a>
+                  </li>
+                  <li class="nav-item nav-items">
+                    <a class="nav-link nav-links" href="./contact.html">Contact</a>
+                  </li>
+                </ul>
+                <div class="position-relative">
+                    <a href="" class="text-decoration-none text-dark">
+                        <i class="fa-solid fa-magnifying-glass nav-icon"></i>
+                    </a>
+                    <a href="" class="text-decoration-none text-dark">
+                        <i class="fa-solid fa-cart-shopping nav-icon"></i>
+                    </a>
+                    <a href="" class="text-decoration-none text-dark">
+                        <i class="fa-solid fa-user nav-icon"></i>
+                    </a>
+                </div>
+                <div class="position-absolute rounded-circle cart"><span>5</span></div>
+                <div class="position-absolute rounded-circle user"><span>+100</span></div>
+              </div>
+            </div>
+          </nav>
+    </div>
+  </nav>
+
+<!--main-nav end-->
+<!--contact page start-->
+<div class="container-fluid bg-light py-5">
+    <div class="m-auto text-center col-md-6">
+        <h1 class="h1">Contact Us</h1>
+        <p>Reach out to us at RIYART.
+             Our customer support team is ready to assist you promptly. Your satisfaction is our priority, and we look forward to hearing from you!</p>
+
+    </div>
+</div>
+
+<!--contact page end-->
+
+<!--map start-->
+<div id="mapid" style="width: 100%; height: 300px;"></div>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5
+V3ynxwA==" crossorigin=""></script>
+<script>
+    var mymap = L.map('mapid').setView([-23.013104, -43.394365, 13], 13);
+
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+        maxZoom: 18,
+        attribution: 'Template Design by <a href="https://templatemo.com/">RIYART</a> | Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+         '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+         'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox/streets-v11', 
+        tileSize: 512,
+        zoomOffset: -1
+    }).addTo(mymap);
+
+    L.marker([-23.013104, -43.394365]).addTo(mymap)
+        .bindPopup("<b>It's Code</b> eCommerce Template<br/>Location.").openPopup();
+
+    mymap.scrollWheelZoom.disable();
+    mymap.touchZoom.disable();
+</script>
+
+
+
+<!--map end-->
+<!--start contact-->
+<div class="container py-5">
+    <div class="row py-5">
+        <form action="" class="col-md-9 m-auto">
+            <div class="row">
+                <div class="form-group col-md-6 mb-3">
+                    <label for="">Name</label>
+                    <input type="text" class="form-control mt-1" placeholder="Name">
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                    <label for="">Email</label>
+                    <input type="text" class="form-control mt-1" placeholder="Email">
+                </div>
+                <div class="md-3">
+                    <label for="">Subject</label>
+                    <input type="text" class="form-control mt-1" placeholder="Subject">
+                </div>
+                <div class="md-3">
+                    <label for="">Message</label>
+                    <textarea name=""id="" cols="30" rows="10" class="form-control mt-1">Message</textarea>
+                </div>
+                <div class="row">
+                    <div class="text-end col mt-2">
+                        <button class="btn btn-success btn-lg px-3">Let's Talk</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!--end contact-->
+<!--footer starting-->
+<footer class="bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 pt-5 logo">
+                <h2 class="text-success h2 border-bottom border-light pb-3">RIYART</h2>
+                <ul class="list-unstyled text-light">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href=""class="text-decoration-none text-light">010-202-0430</a>
+
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href=""class="text-decoration-none text-light">022-978-612-855</a>
+
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href=""class="text-decoration-none text-light">info@comp.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 pt-5">
+                <h2 class="text-light h2 border-bottom border-light pb-3">Products</h2>
+                <ul class="list-unstyled text-light footer-link-list list">
+                    <li><a href=""class="text-decoration-none text-light">Cosmetics</a></li>
+                    <li><a href=""class="text-decoration-none text-light">Groceries</a></li>
+                    <li><a href=""class="text-decoration-none text-light"></a>Men's Wear</li>
+                    <li><a href=""class="text-decoration-none text-light">Women's Wear</a></li>
+                    <li><a href=""class="text-decoration-none text-light">Accessories</a></li>
+                    <li><a href=""class="text-decoration-none text-light">Gadgets</a></li>
+                    <li><a href=""class="text-decoration-none text-light">Footwear</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 pt-5">
+                <h2 class="text-light h2 border-bottom border-light pb-3">More Info</h2>
+                <ul class="list-unstyled text-light footer-link-list list">
+                    <li><a href=""class="text-decoration-none text-light">Home</a></li>
+                    <li><a href=""class="text-decoration-none text-light">About Us</a></li>
+                    <li><a href=""class="text-decoration-none text-light"></a>Shop Address</li>
+                    <li><a href=""class="text-decoration-none text-light">FAQs</a></li>
+                    <li><a href=""class="text-decoration-none text-light">Contact</a></li>
+                </ul>
+            </div>
+            <div class="row text-light">
+                <div class="col-12 mb-3"> 
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto w-100">
+                    <div class="d-flex justify-content-between"></div>
+                    <div class="d-flex">
+                        <li class="border border-light rounded-circle text-center list-unstyled ms-2 f-links">
+                            <a href="https://facebook.com/" target="_blank"text-light">
+                                <i class="f-links fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="border border-light rounded-circle text-center list-unstyled ms-2 f-links">
+                            <a href="https://instagram.com/" target="_blank"text-light">
+                                <i class="f-links fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="border border-light rounded-circle text-center list-unstyled ms-2 f-links">
+                            <a href="https://twitter.com/" target="_blank"text-light">
+                                <i class="f-links fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="border border-light rounded-circle text-center list-unstyled ms-2 f-links">
+                            <a href="https://linkedin.com/" target="_blank"text-light">
+                                <i class="f-links fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="col-auto d-flex text-center">
+                        <input type="text" class="bg-dark border-light rounded" placeholder="Email Address">
+                        <div class="btn btn-success text-light rounded f-email">Subscibe</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="w-100 bg-dark py-3">
+    <div class="container">
+        <div class="row pt-2">
+            <div class="col-l2">
+                <div class="text-left text-light">
+                    Copyright &copy;2022 Company name
+                    | Designed by <a href="" class="text-decoration-none text-success">RIYART</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+<!--footer ending-->
+    
+</body>
+</html>

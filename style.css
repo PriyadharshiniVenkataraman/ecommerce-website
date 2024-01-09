@@ -1,0 +1,92 @@
+.contact-info{
+    font-size:11px;
+}
+.nav-links{
+    font-size: 19px;
+    font-weight: 500;
+    color: #212934 !important;
+}
+.nav-links:hover{
+    color:red !important;
+}
+.nav-items{
+    margin-right: 100px;
+    padding:5px;
+
+}
+.nav-icon{
+    margin-right: 15px;
+}
+.cart{
+    top: 1rem;
+    right:3.4rem;
+    padding:0px 6px;
+    font-size: small;
+    background:rgb(221,221,221);
+}
+.user{
+    top:1rem;
+    right:0.3rem;
+    padding:0px 6px;
+    font-size:small;
+    background:rgb(221,221,221);
+
+}
+.s-image{
+    padding: 15px;
+    width: 450px;
+    margin-right: 5px;
+}
+.tittle{
+    font-size: 60px;
+}
+.discription{
+    font-size: 40px;
+    line-height: 45px;
+}
+.d-infoo{
+    font-size: 20px;
+    line-height: 30px;
+}
+.background{
+    background-color: #efefef;
+}
+.carousel-inner{
+    background-color: #efefef;
+}
+.b-image{
+    height: 290px;
+
+}.logo ul li{
+    padding: 15px;
+    font-weight: 700;
+}
+.list li{
+    padding-bottom: 10px;
+    font-size: 20px;
+
+}
+.list li a:hover{
+    color: green !important;
+    transition: 0.2s ease-in-out;
+}
+.f-links{
+    padding: 8px;
+}
+.f-links:hover{
+    background: #efefef;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+.f-email{
+    padding: 11px;
+}
+
+.service-icon-wap:hover i,.service-icon-wap:hover{
+    color: white !important;
+    background: green;
+    transition: 0.3s ease-in-out ;
+}
+.s-shadow{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
